@@ -1,1 +1,3 @@
 *.log
+mongo_data/*
+!mongo_data/.gitkeep
