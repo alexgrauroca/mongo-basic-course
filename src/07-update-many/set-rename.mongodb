@@ -1,0 +1,19 @@
+use("sample_training")
+
+db.zips.updateMany({
+    city: "CLEVELAND"
+}, {
+    $set: {
+        myAttr: "hola"
+    }
+})
+
+db.zips.updateMany({
+    city: "CLEVELAND"
+}, {
+    $rename: {
+        myAttr: "my_data"
+    }
+})
+
+db.zips.find({ city: "CLEVELAND" })
