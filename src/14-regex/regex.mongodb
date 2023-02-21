@@ -1,0 +1,11 @@
+use("platzi_store")
+
+db.inventory.find({
+    "item.description": {
+        $regex: /Description/i
+    }
+})
+
+// /asdasd$/ => ends with asdasd
+// /^asdasd/ => starts with asdasd
+// /^asdasd/m => all lines starts with asdasd (m = multiline)
