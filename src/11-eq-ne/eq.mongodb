@@ -1,0 +1,7 @@
+use("platzi_store")
+
+db.inventory.find({
+    "item.name": "ab"
+})
+
+// "item.name": { $eq: "ab" } is equivalent
